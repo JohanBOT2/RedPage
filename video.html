@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>WatchNow — Player</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="player-page">
+  <header class="topbar">
+    <div class="brand">
+      <a href="index.html" class="brandlink">
+        <img src="assets/logo.svg" alt="WatchNow logo" width="22" height="22"/>
+        <span>WatchNow</span>
+      </a>
+    </div>
+    <div class="badges"><span class="not-secure">Not secure</span><span>LIVE</span></div>
+  </header>
+
+  <main class="player-layout">
+    <section class="player-col">
+      <div class="player" id="player">
+        <div class="stamp">REC <span id="timecode">00:00:00</span></div>
+        <video id="vid" autoplay muted controls playsinline></video>
+        <div class="meta">
+          <div class="title" id="title"></div>
+          <div class="sub"><span id="user"></span> • <span id="views"></span> views • <span id="ago"></span></div>
+        </div>
+      </div>
+
+      <div class="desc" id="desc"></div>
+    </section>
+
+    <aside class="side-col">
+      <div class="banner warn">User uploads (mock)</div>
+      <div id="upnext" class="upnext"></div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    initPlayer();
+  </script>
+</body>
+</html>

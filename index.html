@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>WatchNow — User Uploads (Mock)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="WatchNow logo" width="22" height="22"/>
+      <span>WatchNow</span>
+    </div>
+    <div class="badges"><span class="not-secure">Not secure</span><span>18+</span></div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <div class="navlabel">Categories</div>
+      <ul>
+        <li><a href="#">All uploads</a></li>
+        <li><a href="#">Live</a></li>
+        <li><a href="#">Street</a></li>
+        <li><a href="#">Dashcam</a></li>
+        <li><a href="#">Night</a></li>
+      </ul>
+      <div class="adbox">AD • click here (mock)</div>
+      <div class="adbox">VPN • 90% OFF (mock)</div>
+    </aside>
+
+    <section class="content">
+      <div class="banner warn">⚠︎ User submitted content. Viewer discretion advised. (Mock)</div>
+
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <div id="age-modal" class="modal" role="dialog" aria-modal="true">
+    <div class="card">
+      <h3>Age verification</h3>
+      <p>This mock site requires you to be 18+. No harmful content included.</p>
+      <div class="btns">
+        <button class="btn danger" onclick="ageOk()">Continue</button>
+        <button class="btn neutral" onclick="leave()">Leave</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
